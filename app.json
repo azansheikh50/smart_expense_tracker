@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Smart Bachat",
+    "slug": "smart-expense-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "spendwise",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.teyzix.spendwise",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Smart Bachat uses Face ID to securely sign in to your local account."
+      }
+    },
+    "android": {
+      "package": "com.teyzix.spendwise",
+      "adaptiveIcon": {
+        "backgroundColor": "#5668F5",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-sharing",
+      "expo-local-authentication",
+      "expo-notifications",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#5668F5",
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#111C35"
+          }
+        }
+      ]
+    ]
+  }
+}
